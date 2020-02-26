@@ -1,47 +1,52 @@
-<!-- 
-    @athor: Le Truong Giang
-    Date and time: 24/02/2020 
-    Note: Home page
--->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>home</title>
+    <title>home.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <!-- CSS -->
-        <!-- reset css -->
-        <link rel="stylesheet" href="css/reset.css">
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- font-awesome css-->
-        <link rel="stylesheet" href="css/all.css">
-        <!-- custom css -->
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- JS -->
-        <!-- bootstrap js -->
-        <script src="scripts/bootstrap.min.js"></script>
-        <!-- jquery js -->
-        <script src="jquery/jquery.js"></script>
-        <!-- font-awesome js -->
-        <script src="scripts/all.js"></script>
-        <!-- custom js -->
-        <script src="scripts/js.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
 
 </head>
+
 <body>
-    <!-- TOP HEADER START -->
+
+
+    <!-- TOP HEADER Start
+    ================================================== -->
+
     <section id="top">
         <div class="container">
             <div class="row">
-                <div class="col-xs-3 col-sm-5 col-md-7">
+                <!-- COL 1 -->
+                <div class="col-xs-3 col-sm-5 col-md-6 col-lg-7">
                     <p class="contact-action">
-                        <i class="fas fa-phone-alt phone-icon"></i>
-                        Nếu có thắc mắc xin liên hệ: <strong>(+84)968411721</strong></p>
+                        <i class="fas fa-phone-alt"></i>
+                        Nếu có thắc mắc xin vui lòng liên hệ: 
+                        <strong>(+84)968411721</strong>
+                    </p>
                 </div>
-                
+                <!-- END COL 1 -->
+                <!-- COL 2 -->
                 <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
                     <div class="search-box">
                         <div class="input-group">
@@ -50,12 +55,14 @@
 					        	<button class="btn btn-default" type="button"></button>
 					      	</span>
                         </div>
-                        <!-- /.input-group -->
+                        <!-- end input-group -->
                     </div>
-                    <!-- /.search-box -->
+                    <!-- end search-box -->
                 </div>
-
-                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 clearfix">
+                <!-- END COL 2 -->
+                
+                <!-- COL 3 -->
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 clearfix log-car-icon">
                     <ul class="login-cart">
                         <li>
                             <a data-toggle="modal" data-target="#myModal" href="#">
@@ -71,8 +78,8 @@
                                         <li class="media">
                                             <img class="pull-left" src="images/product-item.jpg" alt="">
                                             <div class="media-body">
-                                                <h6>Mỳ ý
-                                                    <span>$250</span>
+                                                <h6>Pizza
+                                                    <span>99.000</span>
                                                 </h6>
                                             </div>
                                         </li>
@@ -83,11 +90,950 @@
                         </li>
                     </ul>
                 </div>
+                <!-- END COL 3 --> 
             </div>
-            <!-- End Of /.row -->
+            <!-- END ROW -->
         </div>
-        <!-- End Of /.Container -->
+        <!-- END CONTAINER -->
+
+
+        <!-- MODAL Start
+    	================================================== -->
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">ĐĂNG NHẬP</h4>
+                    </div>
+                    <div class="modal-body clearfix">
+
+                        <form action="#" method="post" id="create-account_form" class="std">
+                            <fieldset>
+                                <h3>Tạo tài khoản</h3>
+                                <div class="form_content clearfix">
+                                    <h4>Tên tài khoản</h4>
+                                    <p class="text">
+                                        <label for="email_create">Tài khoản</label>
+                                        <span>
+											<input placeholder="Nhập địa chỉ E-mail"  type="text" id="email_create" name="email_create" value="" class="account_input">
+					                    </span>
+                                    </p>
+                                    <p class="submit">
+                                        <button class="btn btn-primary">Tạo tài khoản</button>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form action="" method="post" id="login_form" class="std">
+                            <fieldset>
+                                <h3>Bạn đã có tài khoản?</h3>
+                                <div class="form_content clearfix">
+                                    <p class="text">
+                                        <label for="email">Địa chỉ E-mail</label>
+                                        <span><input placeholder="Địa chỉ E-mail" type="text" id="email" name="email" value="" class="account_input"></span>
+                                    </p>
+                                    <p class="text">
+                                        <label for="passwd">Mật Khẩu</label>
+                                        <span><input placeholder="Mật Khẩu" type="password" id="passwd" name="passwd" value="" class="account_input"></span>
+                                    </p>
+                                    <p class="lost_password">
+                                        <a href="#popab-password-reset" class="popab-password-link">Quên mật khẩu?</a>
+                                    </p>
+                                    <p class="submit">
+                                        <button class="btn btn-success">Đăng nhập</button>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- END TOP HEADER START -->
+    <!-- END SECTION-->
+
+
+
+    <!-- LOGO
+    ================================================== -->
+
+    <header>
+        <div class="container img-responsive">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#">
+                        <img src="images/logotop.png" alt="logo">
+                    </a>
+                </div>
+                <!-- End col-md-12 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </header>
+    <!-- End of /Header -->
+
+
+
+
+    <!-- MENU
+    ================================================== -->
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+            </div>
+            <!-- End navbar-header -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-main">
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="shop.html">Cửa hàng</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+							Các món khác
+							<span class="caret"></span>
+						</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Món khai vị</a></li>
+                            <li><a href="#">Mỳ ý và cơm</a></li>
+                            <li><a href="#">Thức uống</a></li>
+                            <li><a href="#">Khuyến mãi</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of /.dropdown -->
+                    <li><a href="blog.html">Bài viết</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+
+
+
+                </ul>
+                <!-- End nav-main -->
+            </div>
+            <!-- End navbar-collapse -->
+        </div>
+        <!-- End container-fluid -->
+    </nav>
+    <!-- End nav -->
+
+
+    <!-- SLIDER
+    ================================================== -->
+
+
+    <section id="slider-area">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="slider" class="nivoSlider">
+                    <img src="images/banner-1.png" alt="" />
+                    <img src="images/banner-2.png" alt="" />
+                    <img src="images/banner-3.png" alt="" />
+                </div>
+                <!-- End nivoslider -->
+            </div>
+            <!-- End col-md-12 -->
+        </div>
+        <!-- End row -->
+    </section>
+    <!-- End Section -->
+
+
+
+    <!-- FEATURES
+    ================================================== -->
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="block">
+                        <div class="media">
+                            <div class="pull-left" href="#">
+                                <i class="fa fa-ambulance fa-lg"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Free Shipping</h4>
+                                <p>Miễn phí ship trong khu vực 5km</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block">
+                        <div class="media">
+                            <div class="pull-left" href="#">
+                                <i class="fas fa-concierge-bell fa-lg"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Dịch vụ</h4>
+                                <p>Nhanh nhất - Tốt nhất - Rẻ nhất</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block">
+                        <div class="media">
+                            <div class="pull-left" href="#">
+                                <i class=" fa fa-phone fa-lg"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Liên hệ ngay</h4>
+                                <p>0968411721 - 0378978820</p>
+                            </div>
+                            <!-- End media-body -->
+                        </div>
+                        <!-- End media -->
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End col-md-4 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- End section -->
+
+
+
+    <!-- CATAGORIE
+    ================================================== -->
+
+    <section id="catagorie">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <div class="block-heading">
+                            <h2>Giới thiệu</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <a class="catagotie-head" href="blog.html">
+                                        <img src="images/category-image-1.jpg" alt="...">
+                                        <h3>PIZZA MAN</h3>
+                                    </a>
+                                    <div class="caption">
+                                        <p>Chúng tôi mang đến phương châm phục vụ khách với
+                                            dịch vụ tốt nhất, nhanh chóng và đặt niềm tin khách
+                                            hàng lên hàng đầu. </p>
+                                        <p>
+                                            <a href="blog.html" class="btn btn-default btn-transparent" role="button">
+                                                <span>Xem thêm</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <!-- End caption -->
+                                </div>
+                                <!-- End thumbnail -->
+                            </div>
+                            <!-- End col-sm-6 col-md-4 -->
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <a class="catagotie-head" href="blog.html">
+                                        <img src="images/category-image-2.jpg" alt="...">
+                                        <h3>PIZZA MAN</h3>
+                                    </a>
+                                    <div class="caption">
+                                        <p>Chúng tôi mang đến phương châm phục vụ khách với
+                                            dịch vụ tốt nhất, nhanh chóng và đặt niềm tin khách
+                                            hàng lên hàng đầu.</p>
+                                        <p>
+                                            <a href="blog.html" class="btn btn-default btn-transparent" role="button">
+                                                <span>Xem thêm</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <!-- End caption -->
+                                </div>
+                                <!-- End humbnail -->
+                            </div>
+                            <!-- End col-sm-6 col-md-4 -->
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <a class="catagotie-head" href="blog.html">
+                                        <img src="images/category-image-3.jpg" alt="...">
+                                        <h3>PIZZA MAN</h3>
+                                    </a>
+                                    <div class="caption">
+                                        <p>Chúng tôi mang đến phương châm phục vụ khách với
+                                            dịch vụ tốt nhất, nhanh chóng và đặt niềm tin khách
+                                            hàng lên hàng đầu. </p>
+                                        <p>
+                                            <a href="blog.html" class="btn btn-default btn-transparent" role="button">
+                                                <span>Xem thêm </span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <!-- End caption -->
+                                </div>
+                                <!-- End thumbnail -->
+                            </div>
+                            <!-- End col-sm-6 col-md-4 -->
+                        </div>
+                        <!-- End row -->
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End col-md-12 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- End of Section -->
+
+
+
+
+    <!-- PRODUCTS Start
+    ================================================== -->
+
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="products-heading">
+                        <h2>Thực đơn</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Of Col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+
+                <div class="col-md-3">
+                    <div class="products">
+                        <a href="single-product.html">
+                            <img src="images/pizza-1.jpg" alt="">
+                        </a>
+                        <a href="single-product.html">
+                            <h4 class="piza-fonts">Pizza 9</h4>
+                        </a>
+                        <div class="price-star">
+                            <p class="price">Giá: 1350000</p> 
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <a class="view-link shutter" href="#">
+                                <i class="fa fa-plus-circle"></i>Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                    <!-- End products -->
+                </div>
+                <!-- End Col-md-3 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- End of Section -->
+
+
+    <!-- NEXT
+    ======================================================== -->
+    <div class="pagination-bottom">
+        <ul class="pagination">
+              <li class="disabled"><a href="#">&laquo;</a></li>
+              <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">»</a></li>
+        </ul>	
+        <!-- End pagination -->
+    </div>
+
+
+    <!-- CALL TO ACTION Start
+    ================================================== -->
+
+    <section id="call-to-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <div class="block-heading">
+                            <h2>Thương hiệu</h2>
+                        </div>
+                    </div>
+                    <!-- End block -->
+                    <div id="owl-example" class="owl-carousel">
+                        <div> <img src="images/company-1.png" alt=""></div>
+                        <div> <img src="images/company-2.png" alt=""></div>
+                        <div> <img src="images/company-3.png" alt=""></div>
+                        <div> <img src="images/company-4.png" alt=""></div>
+                        <div> <img src="images/company-5.png" alt=""></div>
+                        <div> <img src="images/company-6.png" alt=""></div>
+                        <div> <img src="images/company-8.png" alt=""></div>
+                        <div> <img src="images/company-9.png" alt=""></div>
+                    </div>
+                    <!-- End Owl-Slider -->
+                </div>
+                <!-- End col-md-12 -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Container -->
+    </section>
+    <!-- End of Section -->
+
+
+
+    <!-- FOOTER Start
+    ================================================== -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="block clearfix">
+                        <a href="#">
+                            <img src="images/logobot.png" alt="">
+                        </a>
+                        <p class="footer-text">
+                            Chúng tôi mang đến phương châm phục vụ khách với
+                            dịch vụ tốt nhất, nhanh chóng và đặt niềm tin khách
+                            hàng lên hàng đầu. 
+                        </p>
+                        <ul class="social-icon">
+                            <li class="social-icon-border">
+                                <a class="contact-icon" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon" href="#">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon" href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon" href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End social-icon -->
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End Col-md-4 -->
+                <div class="col-md-4">
+                    <div class="block">
+                        <h4>Địa chỉ</h4>
+                        <p><i class="fa  fa-map-marker"></i> <span>PIZZA MAN</span>110 Xuân Phương, Từ Liêm, Hà Nội</p>
+                        <p> <i class="fa  fa-mobile"></i> <span>Điện thoại:</span> 0968411721 </p>
+                        <p class="mail"><i class="fa  fa-envelope"></i><span>Eamil:</span> pizzaman@gmail.com</p>
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End Of Col-md-3 -->
+                <div class="col-md-4">
+                    <div class="block">
+                        <h4>Xem nhiều hơn</h4>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/pizza-1.jpg" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/pizza-1.jpg" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/pizza-1.jpg" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/pizza-1.jpg" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/pizza-1.jpg" alt="...">
+                            </a>
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/pizza-1.jpg" alt="...">
+                            </a>
+                        </div>
+                        <!-- End media -->
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End Of Col-md-3 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End Container -->
+
+
+
+        <!-- FOOTER-BOTTOM Start
+    ================================================== -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="cash-out pull-left">
+                            <li>
+                                <a href="#">
+                                    <img src="images/American-Express.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/PayPal.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Maestro.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Visa.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/Visa-Electron.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copyright-text pull-right">Lê Trường Giang - Web2022</p>
+                    </div>
+                    <!-- End col-md-12 -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End container -->
+        </div>
+        <!-- End footer-bottom -->
+    </footer>
+    <!-- End Of Footer -->
+
+    <a id="back-top" href="#"></a>
 </body>
+
 </html>
