@@ -1,22 +1,28 @@
 /* VARIABLE */
+
 :root {
     --font-rob-ita: Roboto-Italic;
     --font-rob-bla: Roboto-back;
-  }
-  /* END VARIABLE */
-  
-  /* FONT */
-  @font-face {
+}
+
+
+/* END VARIABLE */
+
+
+/* FONT */
+
+@font-face {
     font-family: Roboto-italic;
     src: url(fonts/Roboto/Roboto-Italic.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Roboto-back;
     src: url(fonts/Roboto/Roboto-Black.ttf);
-  }
+}
 
-  /* END FONT */
+
+/* END FONT */
 
 article,
 aside,
@@ -1651,7 +1657,8 @@ legend {
 label {
     display: inline-block;
     margin-bottom: 5px;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 18px;
 }
 
 input[type="search"] {
@@ -2129,7 +2136,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning {
     color: #fff;
     background-color: #f0ad4e;
-    border-color: #eea236
+    border-color: #eea236;
+    margin: 20px 0 40px 220px;
 }
 
 .btn-warning:hover,

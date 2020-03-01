@@ -1,32 +1,40 @@
 /* VARIABLE */
+
 :root {
     --font-rob-ita: Roboto-italic;
     --font-rob-bla: Roboto-back;
     --font-rob-bol: Roboto-bold;
     --font-rob-med: Roboto-medium;
-  }
-  /* END VARIABLE */
-  
-  /* FONT */
-  @font-face {
+}
+
+
+/* END VARIABLE */
+
+
+/* FONT */
+
+@font-face {
     font-family: Roboto-italic;
     src: url(fonts/Roboto/Roboto-Italic.ttf);
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: Roboto-back;
     src: url(fonts/Roboto/Roboto-Black.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: Roboto-back;
     src: url(fonts/Roboto/Roboto-Bold.ttf);
-  }
-  @font-face {
-      font-family: Roboto-,medium;
-      src: url(fonts/Roboto/Roboto-Medium.ttf);
-  }
-  /* END FONT */
+}
+
+@font-face {
+    font-family: Roboto-medium;
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+
+
+/* END FONT */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -135,7 +143,6 @@ section+section {
     color: black;
     padding: 5px 0;
 }
-
 
 svg.svg-inline--fa.fa-phone-square.fa-w-14 {
     margin-right: 5px;
@@ -323,6 +330,7 @@ a.popab-password-link {
     font-size: 14px;
     font-family: var(--font-rob-bla);
 }
+
 #create-account_form .text label {
     display: none;
 }
@@ -333,9 +341,11 @@ a.popab-password-link {
     font-family: var(--font-rob-bol);
     color: black;
 }
+
 .modal-header h4 {
     font-family: var(--font-rob-bol);
 }
+
 #authentication #create-account_form .form_content,
 #authentication #login_form .form_content {
     background: none repeat scroll 0 0 #F0F0F0 !important;
@@ -659,7 +669,7 @@ a.popab-password-link {
 }
 
 .products:hover h4 {
-    color:#00aeef;
+    color: #00aeef;
 }
 
 .products a h4 {
@@ -672,7 +682,7 @@ a.popab-password-link {
 }
 
 .products a h4:hover {
-    color:#00aeef;
+    color: #00aeef;
 }
 
 #products+section {
@@ -712,7 +722,7 @@ a.popab-password-link {
 
 .price {
     font-size: 18px;
-    color:#382158;
+    color: #382158;
     font-weight: bold;
     margin-bottom: 8px;
     font-family: var(--font-rob-bla);
@@ -727,7 +737,7 @@ a.popab-password-link {
     ==================================================*/
 
 footer {
-    background:#fdd700;
+    background: #fdd700;
     color: #fff;
     padding-top: 30px;
 }
@@ -747,7 +757,7 @@ footer .block p i {
 
 footer .block h4 {
     font-family: var(--font-rob-bla);
-    margin:25px 0 20px 0;
+    margin: 25px 0 20px 0;
     color: #fff;
 }
 
@@ -797,9 +807,8 @@ footer .block span {
     ==================================================*/
 
 .social-icon li {
-
     float: left;
-    margin:10px 8px 0 0;
+    margin: 10px 8px 0 0;
 }
 
 .social-icon li a i {
@@ -820,6 +829,7 @@ footer .block span {
 .contact-icon:hover {
     background: #99f5fc;
 }
+
 
 /*----------------Cash Out--------------------*/
 
@@ -1201,7 +1211,6 @@ footer .block span {
     font-size: 13px;
 }
 
-
 .author-id .media h5 {
     background: #EEE;
     margin: 0 0 20px;
@@ -1217,9 +1226,11 @@ footer .block span {
     font-size: 13px;
     color: #90c322;
 }
+
 .media-heading {
     font-family: var(--font-rob-bol);
-} 
+}
+
 .media-body p {
     font-family: var(--font-rob-bol);
 }
@@ -1249,6 +1260,10 @@ footer .block span {
 
 .blog-sidebar .block {
     margin-bottom: 50px;
+}
+
+h4.catalo_shop {
+    color: #90c33e;
 }
 
 .blog-sidebar .block .media-heading {
@@ -1307,7 +1322,7 @@ footer .block span {
 }
 
 .blog-sidebar .block .list-group .list-group-item:hover {
-    background: #90c322;
+    background: #fdd700;
     color: #fff;
     padding-left: 20px;
 }
@@ -1342,7 +1357,7 @@ footer .block span {
 }
 
 p.top-text-sizemd {
-    color: #00aeef;
+    color: #90c33e;
     font-family: var(--main-txt-family);
 }
 
@@ -1354,7 +1369,6 @@ a.view-link.shutter {
     margin-bottom: 10px;
     font-family: var(--font-rob-bol);
 }
-
 
 svg.svg-inline--fa.fa-plus-circle.fa-w-16 {
     margin-right: 5px;
@@ -1404,6 +1418,14 @@ svg.svg-inline--fa.fa-ambulance.fa-w-20 {
 
 #shop .products-heading h2 {
     font-size: 30px;
+}
+
+.filter-shop {
+    padding: 20px 30px 50px 0;
+}
+
+h2.products-heading-menu {
+    color: #90c33e;
 }
 
 .pagination-bottom {
@@ -1510,4 +1532,45 @@ p.footer-text {
 .block p {
     color: #000;
     font-family: var(--font-rob-bla);
+}
+
+.pay-content h5 {
+    font-size: 20px;
+    font-family: var(--font-rob-med);
+}
+
+p.pay-content-point span {
+    color: #90c33e;
+}
+
+h5.pay-content-point span {
+    color: red;
+}
+
+.text-right {
+    float: right;
+}
+
+.paying-text h5 {
+    font-size: 20px;
+}
+
+.paying-text-inf h5 {
+    color: red;
+    font-family: var(--font-rob-med);
+    font-weight: bold;
+}
+
+.pt-1 p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.pb-1 p {
+    margin-bottom: 30px;
+}
+
+.pt-2 p {
+    font-size: 16px;
+    color: #90c33e;
 }

@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pay.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JS -->
+    <script src="js/all.js"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+
+
+    <!-- TOP HEADER Start
+    ================================================== -->
+
+    <section id="top">
+        <div class="container">
+            <div class="row">
+                <!-- COL 1 -->
+                <div class="col-xs-3 col-sm-5 col-md-6 col-lg-7">
+                    <p class="contact-action">
+                        <i class="fas fa-phone-alt"></i> Nếu có thắc mắc xin vui lòng liên hệ:
+                        <strong>(+84)968411721</strong>
+                    </p>
+                </div>
+                <!-- END COL 1 -->
+                <!-- COL 2 -->
+                <div class="col-xs-5 col-sm-3 col-md-2 col-lg-2">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <input placeholder="Tìm kiếm" type="text" class="form-control">
+                            <span class="input-group-btn">
+					        	<button class="btn btn-default" type="button"></button>
+					      	</span>
+                        </div>
+                        <!-- end input-group -->
+                    </div>
+                    <!-- end search-box -->
+                </div>
+                <!-- END COL 2 -->
+
+                <!-- COL 3 -->
+                <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 clearfix log-car-icon">
+                    <ul class="login-cart">
+                        <li>
+                            <a data-toggle="modal" data-target="#myModal" href="#">
+                                <i class="fa fa-user"></i> Đăng nhập
+                            </a>
+                        </li>
+                        <li>
+                            <div class="cart dropdown">
+                                <a data-toggle="dropdown" href="#"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a>
+                                <div class="dropdown-menu dropup">
+                                    <span class="caret"></span>
+                                    <ul class="media-list">
+                                        <li class="media">
+                                            <img class="pull-left" src="images/product-item.jpg" alt="">
+                                            <div class="media-body">
+                                                <h6>Pizza
+                                                    <span>99.000</span>
+                                                </h6>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="pay.html"><button class="btn btn-primary btn-sm">Thanh toán</button></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END COL 3 -->
+            </div>
+            <!-- END ROW -->
+        </div>
+        <!-- END CONTAINER -->
+
+
+        <!-- MODAL Start
+    	================================================== -->
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">ĐĂNG NHẬP</h4>
+                    </div>
+                    <div class="modal-body clearfix">
+
+                        <form action="#" method="post" id="create-account_form" class="std">
+                            <fieldset>
+                                <h3>Tạo tài khoản</h3>
+                                <div class="form_content clearfix">
+                                    <h4>Tên tài khoản</h4>
+                                    <p class="text">
+                                        <label for="email_create">Tài khoản</label>
+                                        <span>
+											<input placeholder="Nhập địa chỉ E-mail"  type="text" id="email_create" name="email_create" value="" class="account_input">
+					                    </span>
+                                    </p>
+                                    <p class="submit">
+                                        <button class="btn btn-primary">Tạo tài khoản</button>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form action="" method="post" id="login_form" class="std">
+                            <fieldset>
+                                <h3>Bạn đã có tài khoản?</h3>
+                                <div class="form_content clearfix">
+                                    <p class="text">
+                                        <label for="email">Địa chỉ E-mail</label>
+                                        <span><input placeholder="Địa chỉ E-mail" type="text" id="email" name="email" value="" class="account_input"></span>
+                                    </p>
+                                    <p class="text">
+                                        <label for="passwd">Mật Khẩu</label>
+                                        <span><input placeholder="Mật Khẩu" type="password" id="passwd" name="passwd" value="" class="account_input"></span>
+                                    </p>
+                                    <p class="lost_password">
+                                        <a href="#popab-password-reset" class="popab-password-link">Quên mật khẩu?</a>
+                                    </p>
+                                    <p class="submit">
+                                        <button class="btn btn-success">Đăng nhập</button>
+                                    </p>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION-->
+
+
+
+    <!-- LOGO
+    ================================================== -->
+
+    <header>
+        <div class="container img-responsive">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#">
+                        <img src="images/logotop.png" alt="logo">
+                    </a>
+                </div>
+                <!-- End col-md-12 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+    </header>
+    <!-- End of /Header -->
+
+
+
+
+    <!-- MENU
+    ================================================== -->
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+            </div>
+            <!-- End navbar-header -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-main">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="shop.html">Cửa hàng</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+							Các món khác
+							<span class="caret"></span>
+						</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Món khai vị</a></li>
+                            <li><a href="#">Mỳ ý và cơm</a></li>
+                            <li><a href="#">Thức uống</a></li>
+                            <li><a href="#">Khuyến mãi</a></li>
+                        </ul>
+                    </li>
+                    <!-- End of /.dropdown -->
+                    <li><a href="blog.html">Bài viết</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+
+
+
+                </ul>
+                <!-- End nav-main -->
+            </div>
+            <!-- End navbar-collapse -->
+        </div>
+        <!-- End container-fluid -->
+    </nav>
+    <!-- End nav -->
+
+
+
+
+    <section id="topic-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="top-text-sizelg">Thanh toán</h1>
+                </div>
+                <!-- End of /.col-md-4 -->
+                <div class="col-md-8 hidden-xs">
+                    <ol class="breadcrumb pull-right">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active">Thanh toán</li>
+                    </ol>
+                </div>
+                <!-- End of /.col-md-8 -->
+            </div>
+            <!-- End of /.row -->
+        </div>
+        <!-- End of /.container -->
+    </section>
+    <!-- End of /#Topic-header -->
+
+
+
+    <!-- PRODUCTS Start
+    ================================================== -->
+
+    <section id="pay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-6 pay-content-img">
+                            <img src="Images/pay.jpg" alt="pay image">
+                        </div>
+                        <div class="col-md-4 pay-content">
+                            <h5>Pizza</h5>
+                            <h2>Pizza đặc biệt </h2>
+                            <p class="pay-content-point">Tình trạng: <span>còn hàng</span></p>
+                            <p><i class="fas fa-circle"></i><span> Miễn phí ship trong bán kinh 5km </span></p>
+                            <p><i class="fas fa-circle"></i><span> Từ 5km trở lên tính phí giao hàng </span></p>
+                            <h5 class="pay-content-point">Giá tiền: <span>220.000VNĐ</span></h5>
+                            <p>(Giá đã bao gồm VAT)</p>
+                            <div>
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#">-</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">+</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End row -->
+
+                    <!-- Pagination -->
+                    <div class="products-heading">
+                        <h2 class="products-heading-menu"></h2>
+                    </div>
+
+                    <!-- End Path -->
+                    <div class="row">
+                        <div class="col-md-5  paying-text">
+                            <h5>Đơn giá</h5>
+                        </div>
+                        <div class="col-md-4 text-right paying-text">
+                            <h5>220.000VNĐ</h5>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-md-5  paying-text">
+                            <h5>Giảm</h5>
+                        </div>
+                        <div class="col-md-4 text-right paying-text">
+                            <h5>0VNĐ</h5>
+                        </div>
+                    </div>
+                    <!-- End row -->
+                    <div class="row">
+                        <div class="col-md-5  paying-text">
+                            <h5>Cần thanh toán:</h5>
+                        </div>
+                        <div class="col-md-4 text-right paying-text paying-text-inf">
+                            <h5>220.000VNĐ</h5>
+                        </div>
+                    </div>
+                    <!-- End row -->
+
+                    <div class="products-heading">
+                        <h2 class="products-heading-menu"></h2>
+                    </div>
+                    <!-- End Path -->
+
+                    <div class="row">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                         Anh
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
+                                         Chị
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End row -->
+
+                            <!-- input form -->
+                            <div class="row">
+                                <div class="col-md-8 pt-1">
+                                    <p>Họ và tên:</p>
+                                    <input class="form-control" type="text" placeholder="Nhập họ tên">
+                                </div>
+                            </div>
+                            <!-- End row -->
+
+                            <!-- input form -->
+                            <div class="row">
+                                <div class="col-md-8 pt-1">
+                                    <p>Địa chỉ:</p>
+                                    <input class="form-control" type="text" placeholder="Nhập địa chỉ">
+                                </div>
+                            </div>
+                            <!-- End row -->
+
+                            <!-- input form -->
+                            <div class="row">
+                                <div class="col-md-8 pt-1">
+                                    <p>Yêu cầu khác:</p>
+                                    <input class="form-control" type="text" placeholder="Nhập yêu cầu">
+                                </div>
+                            </div>
+                            <!-- End row -->
+
+                            <div class="row">
+                                <div class="col-md-8 pt-1 pt-2">
+                                    <p>Chúng tôi sẽ gọi điện để xác nhận sau khi đơn hàng được đặt thành công.</p>
+                                </div>
+                            </div>
+                            <!-- End row -->
+
+                            <div class="row">
+                                <div class="col-md-8 pt-1">
+                                    <button type="button" class="btn btn-warning">Đặt hàng</button>
+                                </div>
+                            </div>
+                            <!-- End row -->
+
+                        </form>
+                    </div>
+
+                </div>
+                <!-- End of /.col-md-9 -->
+                <div class="col-md-3">
+                    <div class="blog-sidebar">
+                        <div class="block">
+                            <h4 class="catalo_shop">Danh mục</h4>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fas fa-pizza-slice"></i> Pizza
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fas fa-utensils"></i> Đồ ăn
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fas fa-hamburger"></i> Đồ ăn nhanh
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fas fa-beer"></i> Nước uống
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <img src="images/food-ad.png" alt="">
+                        </div>
+                        <div class="block">
+                            <h4 class="catalo_shop">Đề xuất</h4>
+                            <ul class=" media-list ">
+                                <li class="media ">
+                                    <a class="pull-left " href="# ">
+                                        <img class="media-object " src="Images/pizza-1.jpg " alt="... ">
+                                    </a>
+                                    <div class="media-body ">
+                                        <a href=" " class="media-heading ">Pizza bánh mỳ
+							      		<p>Giảm giá cực sốc chỉ có 
+                                            tại pizza man nhanh tay 
+                                            đặt hàng</p></a>
+                                    </div>
+                                </li>
+                                <li class="media ">
+                                    <a class="pull-left " href="# ">
+                                        <img class="media-object " src="Images/pizza-1.jpg " alt="... ">
+                                    </a>
+                                    <div class="media-body ">
+                                        <a href=" " class="media-heading ">Pizza bánh mỳ
+							      		<p>Giảm giá cực sốc chỉ có 
+                                            tại pizza man nhanh tay 
+                                            đặt hàng</p></a>
+                                    </div>
+                                </li>
+                                <li class="media ">
+                                    <a class="pull-left " href="# ">
+                                        <img class="media-object " src="Images/pizza-1.jpg " alt="... ">
+                                    </a>
+                                    <div class="media-body ">
+                                        <a href=" " class="media-heading ">Pizza bánh mỳ
+							      		<p>Giảm giá cực sốc chỉ có 
+                                            tại pizza man nhanh tay 
+                                            đặt hàng</p></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="block ">
+                            <h4 class="catalo_shop">Từ khoá</h4>
+                            <div class="tag-link ">
+                                <a href=" ">Pizza</a>
+                                <a href=" ">Hot dog</a>
+                                <a href=" ">Trà sữa</a>
+                                <a href=" ">Bánh Mỳ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of /.col-md-3 -->
+
+                </div>
+                <!-- End of /.row -->
+            </div>
+            <!-- End of /.container -->
+    </section>
+    <!-- End of Section -->
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER Start
+    ================================================== -->
+
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <div class="block clearfix ">
+                        <a href="# ">
+                            <img src="images/logobot.png " alt=" ">
+                        </a>
+                        <p class="footer-text ">
+                            Chúng tôi mang đến phương châm phục vụ khách với dịch vụ tốt nhất, nhanh chóng và đặt niềm tin khách hàng lên hàng đầu.
+                        </p>
+                        <ul class="social-icon ">
+                            <li class="social-icon-border ">
+                                <a class="contact-icon " href="# ">
+                                    <i class="fab fa-facebook-f "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon " href="# ">
+                                    <i class="fab fa-instagram-square "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon " href="# ">
+                                    <i class="fab fa-google-plus-g "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon " href="# ">
+                                    <i class="fab fa-twitter "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-icon " href="# ">
+                                    <i class="fab fa-linkedin-in "></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End social-icon -->
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End Col-md-4 -->
+                <div class="col-md-4 ">
+                    <div class="block ">
+                        <h4>Địa chỉ</h4>
+                        <p><i class="fa fa-map-marker "></i> <span>PIZZA MAN</span>110 Xuân Phương, Từ Liêm, Hà Nội</p>
+                        <p> <i class="fa fa-mobile "></i> <span>Điện thoại:</span> 0968411721 </p>
+                        <p class="mail "><i class="fa fa-envelope "></i><span>Eamil:</span> pizzaman@gmail.com</p>
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End Of Col-md-3 -->
+                <div class="col-md-4 ">
+                    <div class="block ">
+                        <h4>Xem nhiều hơn</h4>
+                        <div class="media ">
+                            <a class="pull-left " href="# ">
+                                <img class="media-object " src="images/pizza-1.jpg " alt="... ">
+                            </a>
+                            <a class="pull-left " href="# ">
+                                <img class="media-object " src="images/pizza-1.jpg " alt="... ">
+                            </a>
+                            <a class="pull-left " href="# ">
+                                <img class="media-object " src="images/pizza-1.jpg " alt="... ">
+                            </a>
+                            <a class="pull-left " href="# ">
+                                <img class="media-object " src="images/pizza-1.jpg " alt="... ">
+                            </a>
+                            <a class="pull-left " href="# ">
+                                <img class="media-object " src="images/pizza-1.jpg " alt="... ">
+                            </a>
+                            <a class="pull-left " href="# ">
+                                <img class="media-object " src="images/pizza-1.jpg " alt="... ">
+                            </a>
+                        </div>
+                        <!-- End media -->
+                    </div>
+                    <!-- End block -->
+                </div>
+                <!-- End Of Col-md-3 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End Container -->
+
+
+
+        <!-- FOOTER-BOTTOM Start
+    ================================================== -->
+
+        <div class="footer-bottom ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <ul class="cash-out pull-left ">
+                            <li>
+                                <a href="# ">
+                                    <img src="images/American-Express.png " alt=" ">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="# ">
+                                    <img src="images/PayPal.png " alt=" ">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="# ">
+                                    <img src="images/Maestro.png " alt=" ">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="# ">
+                                    <img src="images/Visa.png " alt=" ">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="# ">
+                                    <img src="images/Visa-Electron.png " alt=" ">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copyright-text pull-right ">Lê Trường Giang - Web2022</p>
+                    </div>
+                    <!-- End col-md-12 -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End container -->
+        </div>
+        <!-- End footer-bottom -->
+    </footer>
+    <!-- End Of Footer -->
+</body>
+
+</html>
