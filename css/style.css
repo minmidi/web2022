@@ -2,7 +2,7 @@
 
 :root {
     --font-rob-ita: Roboto-italic;
-    --font-rob-bla: Roboto-back;
+    --font-rob-bla: Roboto-Black;
     --font-rob-bol: Roboto-bold;
     --font-rob-med: Roboto-medium;
 }
@@ -15,22 +15,22 @@
 
 @font-face {
     font-family: Roboto-italic;
-    src: url(fonts/Roboto/Roboto-Italic.ttf);
+    src: url(/fonts/Roboto-Italic.ttf);
 }
 
 @font-face {
-    font-family: Roboto-back;
-    src: url(fonts/Roboto/Roboto-Black.ttf);
+    font-family: Roboto-Black;
+    src: url(/fonts/Roboto-Black.ttf);
 }
 
 @font-face {
-    font-family: Roboto-back;
-    src: url(fonts/Roboto/Roboto-Bold.ttf);
+    font-family: Roboto-bold;
+    src: url(/fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: Roboto-medium;
-    src: url(fonts/Roboto/Roboto-Medium.ttf);
+    src: url(/fonts/Roboto-Medium.ttf);
 }
 
 
@@ -297,7 +297,7 @@ header {
     background: none repeat scroll 0 0 #fce06b;
     color: black;
     padding: 8px 0;
-    font-family: var(--font-rob-bol);
+    font-family: var(Roboto-bold);
     font-size: 18px;
 }
 
@@ -338,12 +338,12 @@ a.popab-password-link {
 #create-account_form h3,
 #authentication #login_form h3 {
     background: none repeat scroll 0 0 #fce06b;
-    font-family: var(--font-rob-bol);
+    font-family: var(Roboto-bold);
     color: black;
 }
 
 .modal-header h4 {
-    font-family: var(--font-rob-bol);
+    font-family: var(Roboto-bold);
 }
 
 #authentication #create-account_form .form_content,
@@ -1232,7 +1232,7 @@ footer .block span {
 }
 
 .media-body p {
-    font-family: var(--font-rob-bol);
+    font-family: var(Roboto-bold);
 }
 
 .comments-box .media {
@@ -1367,7 +1367,7 @@ h1.top-text-sizelg {
 
 a.view-link.shutter {
     margin-bottom: 10px;
-    font-family: var(--font-rob-bol);
+    font-family: var(Roboto-bold);
 }
 
 svg.svg-inline--fa.fa-plus-circle.fa-w-16 {
