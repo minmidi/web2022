@@ -5,6 +5,8 @@
     --font-rob-bla: Roboto-Black;
     --font-rob-bol: Roboto-bold;
     --font-rob-med: Roboto-medium;
+    --font-rob-reg: Roboto-Regular;
+    --font-rob-lig: Roboto-Light;
 }
 
 
@@ -12,6 +14,16 @@
 
 
 /* FONT */
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(/fonts/Roboto-Light.ttf);
+}
 
 @font-face {
     font-family: Roboto-italic;
@@ -186,7 +198,7 @@ p.contact-action strong {
     color: black;
     padding: 0 10px;
     font-size: 14px;
-    font-family: var(--font-rob-bla);
+    font-family: var(--font-rob-reg);
     -webkit-transition: .4s ease-in-out;
     -moz-transition: .4s ease-in-out;
     -ms-transition: .4s ease-in-out;
@@ -1511,11 +1523,8 @@ element.style {
     font-family: var(--font-rob-bla);
 }
 
-p.footer-text {
-    font-family: var(--font-rob-ita);
-    color: #000;
-}
-
+.footer-text-clear 
+/* test */
 .fa-map-marker {
     color: white;
 }
